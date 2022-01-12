@@ -1,6 +1,6 @@
-# Android Gradle Plugin Skelton
+# Android Gradle Plugin Template
 
-Skelton repository for modern Android Gradle Plugin Project.
+Template repository for modern Android Gradle Plugin Project.
 
 * Kotlin 1.6.10
 * Android Gradle Plugin 7.0.1
