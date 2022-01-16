@@ -21,6 +21,10 @@ android {
     }
 }
 
+greeting {
+    who = "mate"
+}
+
 dependencies {
     implementation(libs.androidx.core)
     implementation(libs.androidx.appcompat)

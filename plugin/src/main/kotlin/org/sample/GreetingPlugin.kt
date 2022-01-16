@@ -9,9 +9,7 @@ class GreetingPlugin : Plugin<Project> {
         val task = project.tasks.register("greeting", GreetingTask::class.java)
         project.afterEvaluate {
             task.configure { target ->
-                extension.who?.let { who ->
-                    target.who = who
-                }
+                target.who.set(extension.who)
             }
         }
     }
