@@ -20,7 +20,7 @@ docs: https://docs.gradle.org/current/userguide/publishing_gradle_plugins.html
 * register Maven Plugin Portal Account
   * https://plugins.gradle.org/user/register
 
-Set your API Key to `~/.gradle/gradle.properties`.
+Set your API Key to `~/.gradle/gradle.properties`, or specify it as command line arguments.
 
 ```properties
 gradle.publish.key=...
