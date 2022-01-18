@@ -38,6 +38,9 @@ document: https://plugins.gradle.org/docs/publish-plugin
 `plugin/build.gradle.kts`
 
 ```
+group = "io.github.{user}" // maven artifact groupId, it's recommended to same as plugin id prefix.
+version = "0.1.0"
+
 gradlePlugin {
     plugins {
         create("plugin") { // unique name in your config
