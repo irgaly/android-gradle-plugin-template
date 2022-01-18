@@ -19,6 +19,7 @@ docs: https://docs.gradle.org/current/userguide/publishing_gradle_plugins.html
 
 * register Maven Plugin Portal Account
   * https://plugins.gradle.org/user/register
+  * Using login with Github account is recommended to use `io.github.{user}.{plugin}` plugin id.
 
 Set your API Key to gradle.properties, or specify it as command line arguments.
 
@@ -31,13 +32,16 @@ gradle.publish.secret=...
 
 Configure your plugin publications.
 
+Plugin id must have your owned domain or `io.github.{user}`. see this
+document: https://plugins.gradle.org/docs/publish-plugin
+
 `plugin/build.gradle.kts`
 
 ```
 gradlePlugin {
     plugins {
         create("plugin") { // unique name in your config
-            id = "org.sample.plugin" // plugin id
+            id = "io.github.{user}.{plugin name}" // plugin id
             displayName = "Sample Plugin"
             description = "A Sample Plugin"
             implementationClass = "org.sample.GreetingPlugin"
