@@ -33,7 +33,7 @@ gradle.publish.secret=...
 Configure your plugin publications.
 
 Plugin id must have your owned domain or `io.github.{user}`. see this
-document: https://plugins.gradle.org/docs/publish-plugin
+document: https://plugins.gradle.org/docs/publish-plugin#approval
 
 `plugin/build.gradle.kts`
 
