@@ -4,10 +4,10 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 class GreetingPlugin : Plugin<Project> {
-    override fun apply(project: Project) {
-        val extension = project.extensions.create("greeting", GreetingExtension::class.java)
-        val task = project.tasks.register("greeting", GreetingTask::class.java)
-        project.afterEvaluate {
+    override fun apply(target: Project) {
+        val extension = target.extensions.create("greeting", GreetingExtension::class.java)
+        val task = target.tasks.register("greeting", GreetingTask::class.java)
+        target.afterEvaluate {
             task.configure { target ->
                 target.who.set(extension.who)
             }
