@@ -1,4 +1,5 @@
 plugins {
+    kotlin("android") apply false
     id("com.android.application") apply false
     `kotlin-dsl` apply false
 }
