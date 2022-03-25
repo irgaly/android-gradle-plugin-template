@@ -2,7 +2,7 @@ plugins {
     id("java-gradle-plugin")
     kotlin("jvm")
     id("maven-publish")
-    id("com.gradle.plugin-publish")
+    alias(libs.plugins.publish)
 }
 
 sourceSets.configureEach {
