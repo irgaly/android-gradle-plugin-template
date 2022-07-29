@@ -37,7 +37,7 @@ document: https://plugins.gradle.org/docs/publish-plugin#approval
 
 `plugin/build.gradle.kts`
 
-```
+```kotlin
 group = "io.github.{user}" // maven artifact groupId, it's recommended to same as plugin id prefix.
 version = "0.1.0"
 
