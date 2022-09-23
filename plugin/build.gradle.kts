@@ -9,7 +9,7 @@ sourceSets.configureEach {
     java.srcDirs("src/$name/kotlin")
 }
 
-group = "org.sample"
+group = "org.sample.plugin"
 version = "0.1.0"
 
 java {
