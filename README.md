@@ -2,11 +2,11 @@
 
 Template repository for modern Android Gradle Plugin Project.
 
-* Kotlin 1.6.10
-* Android Gradle Plugin 7.0.1
+* Kotlin 1.7.20
+* Android Gradle Plugin 7.3.0
   * Sample App's compileSdk = 31 (Android 12)
   * Sample App's minSdk = 26 (Android 8.0)
-* Gradle 7.3.3
+* Gradle 7.5.1
   * Version Catalog
   * Kotlin DSL (*.kts)
   * pluginManagement / dependencyResolutionManagement (settings.gradle.kts)
@@ -38,7 +38,7 @@ document: https://plugins.gradle.org/docs/publish-plugin#approval
 `plugin/build.gradle.kts`
 
 ```kotlin
-group = "io.github.{user}" // maven artifact groupId, it's recommended to same as plugin id prefix.
+group = "io.github.{user}.{plugin name}" // maven artifact groupId, it's recommended to same as plugin id.
 version = "0.1.0"
 
 gradlePlugin {
