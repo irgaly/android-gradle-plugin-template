@@ -1,7 +1,5 @@
 plugins {
-    id("java-gradle-plugin")
     kotlin("jvm")
-    id("maven-publish")
     alias(libs.plugins.publish)
 }
 
