@@ -9,7 +9,7 @@ pluginManagement {
     plugins {
         id("com.android.application") version "7.1.0"
         id("com.android.library") version "7.1.0"
-        kotlin("android") version "1.6.10"
+        kotlin("android") version "1.7.20"
         // if you want to use your plugin from Maven Plugin Portal, specify it's version here
         // and detach :plugin composite by removing `includeBuild("plugin")`
         //id("org.sample.plugin") version "0.1.0"
