@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.KotlinProjectExtension
 
 plugins {
     alias(libs.plugins.android.application) apply false
@@ -7,7 +7,9 @@ plugins {
 }
 
 subprojects {
-    tasks.withType<KotlinCompile> {
-        kotlinOptions.jvmTarget = "11"
+    afterEvaluate {
+        extensions.findByType<KotlinProjectExtension>()?.apply {
+            jvmToolchain(11)
+        }
     }
 }
