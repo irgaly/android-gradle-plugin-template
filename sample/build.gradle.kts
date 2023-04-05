@@ -1,7 +1,7 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
-    id("org.sample.plugin")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.sampleplugin)
 }
 
 android {
@@ -12,9 +12,6 @@ android {
         targetSdk = 31
         versionCode = 1
         versionName = "1.0.0"
-    }
-    sourceSets.configureEach {
-        java.srcDirs("src/$name/kotlin")
     }
     buildFeatures {
         dataBinding = true

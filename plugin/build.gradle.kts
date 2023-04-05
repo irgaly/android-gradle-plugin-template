@@ -1,14 +1,10 @@
 plugins {
-    kotlin("jvm")
+    alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.publish)
 }
 
-sourceSets.configureEach {
-    java.srcDirs("src/$name/kotlin")
-}
-
 group = "org.sample.plugin"
-version = "0.1.0"
+version = libs.versions.sampleplugin.get()
 
 java {
     withSourcesJar()
