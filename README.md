@@ -2,20 +2,20 @@
 
 Template repository for modern Android Gradle Plugin Project.
 
-* Kotlin 1.7.20
-* Android Gradle Plugin 7.3.0
-  * Sample App's compileSdk = 31 (Android 12)
+* Kotlin 1.8.10
+* Android Gradle Plugin 7.4.2
+  * Sample App's compileSdk = 33 (Android 12)
   * Sample App's minSdk = 26 (Android 8.0)
-* Gradle 7.5.1
+* Gradle 8.0.2
   * Version Catalog
   * Kotlin DSL (*.kts)
   * pluginManagement / dependencyResolutionManagement (settings.gradle.kts)
   * Composite Build
-  * mavenPublish + publish to Maven Plugin Portal
+  * Gradle Publish Plugin
 
 ## Publish Plugin
 
-docs: https://docs.gradle.org/current/userguide/publishing_gradle_plugins.html
+docs: https://docs.gradle.org/8.0.2/userguide/publishing_gradle_plugins.html
 
 * register Maven Plugin Portal Account
   * https://plugins.gradle.org/user/register
@@ -38,24 +38,22 @@ document: https://plugins.gradle.org/docs/publish-plugin#approval
 `plugin/build.gradle.kts`
 
 ```kotlin
-group = "io.github.{user}.{plugin name}" // maven artifact groupId, it's recommended to same as plugin id.
+group =
+  "io.github.{user}.{plugin name}" // maven artifact groupId, it's recommended to same as plugin id.
 version = "0.1.0"
 
 gradlePlugin {
-    plugins {
-        create("plugin") { // unique name in your config
-            id = "io.github.{user}.{plugin name}" // plugin id
-            displayName = "Sample Plugin"
-            description = "A Sample Plugin"
-            implementationClass = "org.sample.GreetingPlugin"
-        }
+  website.set("https://github.com/example/example")
+  vcsUrl.set("https://github.com/example/example")
+  plugins {
+    create("plugin") { // unique name in your config
+      id = "io.github.{user}.{plugin name}" // plugin id
+      displayName = "Sample Plugin"
+      description = "A Sample Plugin"
+      tags.set(listOf("example"))
+      implementationClass = "org.sample.GreetingPlugin"
     }
-}
-
-pluginBundle {
-    website = "https://github.com/example/example"
-    vcsUrl = "https://github.com/example/example"
-    tags = listOf("example")
+  }
 }
 ```
 
