@@ -11,7 +11,8 @@ Template repository for modern Android Gradle Plugin Project.
   * Kotlin DSL (*.kts)
   * pluginManagement / dependencyResolutionManagement (settings.gradle.kts)
   * Composite Build
-  * Gradle Publish Plugin
+  * Gradle Plugin Publish Plugin
+  * Gradle Signing Plugin
 
 ## Publish Plugin
 
@@ -21,13 +22,19 @@ docs: https://docs.gradle.org/8.0.2/userguide/publishing_gradle_plugins.html
   * https://plugins.gradle.org/user/register
   * Using login with Github account is recommended to use `io.github.{user}.{plugin}` plugin id.
 
-Set your API Key to gradle.properties, or specify it as command line arguments.
+Set your API Key and signing key to gradle.properties, or specify it as command line arguments.
 
 `~/.gradle/gradle.properties`
 
 ```properties
 gradle.publish.key=...
 gradle.publish.secret=...
+signingKey="-----BEGIN PGP PRIVATE KEY BLOCK-----\
+\
+...\
+-----END PGP PRIVATE KEY BLOCK-----\
+"
+signingPassword=...
 ```
 
 Configure your plugin publications.
