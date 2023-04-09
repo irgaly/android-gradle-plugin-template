@@ -6,7 +6,7 @@ compose-compiler = "1.4.4"
 
 [libraries]
 android-gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle-android" }
-androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.5.1" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.6.1" }
 androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.6.1" }
 compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2023.03.00" }
 compose-activity = { module = "androidx.activity:activity-compose", version = "1.7.0-beta01" }
