@@ -1,7 +1,7 @@
 [versions]
 sampleplugin = "0.1.0"
 kotlin = "1.8.10"
-gradle-android = "7.4.2"
+gradle-android = "8.0.0"
 compose-compiler = "1.4.4"
 
 [libraries]
