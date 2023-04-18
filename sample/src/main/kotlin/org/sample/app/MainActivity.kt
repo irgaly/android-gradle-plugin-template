@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         window.navigationBarColor = Color.Transparent.toArgb()
         WindowInsetsControllerCompat(
             window,
-            findViewById(R.id.content)
+            findViewById(android.R.id.content)
         ).isAppearanceLightStatusBars = true
         setContent {
             MaterialTheme {
