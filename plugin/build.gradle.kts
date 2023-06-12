@@ -21,6 +21,10 @@ gradlePlugin {
     }
 }
 
+kotlin {
+    jvmToolchain(11)
+}
+
 java {
     withSourcesJar()
     withJavadocJar()
