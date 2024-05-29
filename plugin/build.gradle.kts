@@ -8,21 +8,21 @@ group = "org.sample.plugin"
 version = libs.versions.sampleplugin.get()
 
 gradlePlugin {
-    website.set("https://github.com/example/example")
-    vcsUrl.set("https://github.com/example/example")
+    website = "https://github.com/example/example"
+    vcsUrl = "https://github.com/example/example"
     plugins {
         create("plugin") {
             id = "org.sample.plugin"
             displayName = "Sample Plugin"
             description = "A Sample Plugin"
-            tags.set(listOf("example"))
+            tags = listOf("example")
             implementationClass = "org.sample.GreetingPlugin"
         }
     }
 }
 
 kotlin {
-    jvmToolchain(11)
+    jvmToolchain(17)
 }
 
 java {

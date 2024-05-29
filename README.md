@@ -2,11 +2,11 @@
 
 Template repository for modern Android Gradle Plugin Project.
 
-* Kotlin 1.8.10
-* Android Gradle Plugin 8.0.0
+* Kotlin 2.0.0
+* Android Gradle Plugin 8.4.0
   * Sample App's compileSdk = 33 (Android 12)
   * Sample App's minSdk = 26 (Android 8.0)
-* Gradle 8.1
+* Gradle 8.7
   * Version Catalog
   * Kotlin DSL (*.kts)
   * pluginManagement / dependencyResolutionManagement (settings.gradle.kts)
@@ -16,7 +16,7 @@ Template repository for modern Android Gradle Plugin Project.
 
 ## Publish Plugin
 
-docs: https://docs.gradle.org/8.0.2/userguide/publishing_gradle_plugins.html
+docs: https://docs.gradle.org/8.7/userguide/publishing_gradle_plugins.html
 
 * register Maven Plugin Portal Account
   * https://plugins.gradle.org/user/register
@@ -50,14 +50,14 @@ group =
 version = "0.1.0"
 
 gradlePlugin {
-  website.set("https://github.com/example/example")
-  vcsUrl.set("https://github.com/example/example")
+  website = "https://github.com/example/example"
+  vcsUrl = "https://github.com/example/example"
   plugins {
     create("plugin") { // unique name in your config
       id = "io.github.{user}.{plugin name}" // plugin id
       displayName = "Sample Plugin"
       description = "A Sample Plugin"
-      tags.set(listOf("example"))
+      tags = listOf("example")
       implementationClass = "org.sample.GreetingPlugin"
     }
   }
