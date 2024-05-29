@@ -50,14 +50,14 @@ group =
 version = "0.1.0"
 
 gradlePlugin {
-  website.set("https://github.com/example/example")
-  vcsUrl.set("https://github.com/example/example")
+  website = "https://github.com/example/example"
+  vcsUrl = "https://github.com/example/example"
   plugins {
     create("plugin") { // unique name in your config
       id = "io.github.{user}.{plugin name}" // plugin id
       displayName = "Sample Plugin"
       description = "A Sample Plugin"
-      tags.set(listOf("example"))
+      tags = listOf("example")
       implementationClass = "org.sample.GreetingPlugin"
     }
   }
