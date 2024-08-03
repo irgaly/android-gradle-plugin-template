@@ -21,6 +21,11 @@ gradlePlugin {
     }
 }
 
+dependencies {
+    compileOnly(gradleKotlinDsl())
+    implementation(libs.android.gradle)
+}
+
 kotlin {
     jvmToolchain(17)
 }
