@@ -23,6 +23,7 @@ gradlePlugin {
 
 dependencies {
     compileOnly(gradleKotlinDsl())
+    implementation(libs.kotlin.gradle)
     implementation(libs.android.gradle)
 }
 
