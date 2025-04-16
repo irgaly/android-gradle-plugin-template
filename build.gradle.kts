@@ -10,7 +10,7 @@ plugins {
 subprojects {
     afterEvaluate {
         extensions.findByType<KotlinProjectExtension>()?.apply {
-            jvmToolchain(17)
+            jvmToolchain(libs.versions.gradle.jvmToolchain.get().toInt())
         }
     }
 }
