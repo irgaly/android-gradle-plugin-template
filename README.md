@@ -4,8 +4,8 @@ Template repository for modern Android Gradle Plugin Project.
 
 * Kotlin 2.1.10
 * Android Gradle Plugin 8.13.0
-  * Sample App's compileSdk = 35 (Android 15)
-  * Sample App's minSdk = 29 (Android 10)
+  * Sample App's compileSdk = 36 (Android 16)
+  * Sample App's minSdk = 33 (Android 13)
 * Gradle 9.1.0
   * Version Catalog
   * Kotlin DSL (*.kts)
