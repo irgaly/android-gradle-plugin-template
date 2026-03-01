@@ -3,7 +3,7 @@
 Template repository for modern Android Gradle Plugin Project.
 
 * Kotlin 2.2.0
-* Android Gradle Plugin 8.13.0
+* Android Gradle Plugin 9.0.0
   * Sample App's compileSdk = 36 (Android 16)
   * Sample App's minSdk = 33 (Android 13)
 * Gradle 9.1.0
@@ -20,7 +20,7 @@ docs: https://docs.gradle.org/8.7/userguide/publishing_gradle_plugins.html
 
 * register Maven Plugin Portal Account
   * https://plugins.gradle.org/user/register
-  * Using login with Github account is recommended to use `io.github.{user}.{plugin}` plugin id.
+  * Using login with GitHub account is recommended to use `io.github.{user}.{plugin}` plugin id.
 
 Set your API Key and signing key to gradle.properties, or specify it as command line arguments.
 
