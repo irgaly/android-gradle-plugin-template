@@ -1,6 +1,6 @@
 [versions]
 sampleplugin = "0.1.0"
-kotlin = "2.3.0"
+kotlin = "2.4.10"
 gradle-android = "9.3.0"
 gradle-jvmToolchain = "21"
 
