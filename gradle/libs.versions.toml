@@ -22,5 +22,5 @@ kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 android-application = { id = "com.android.application", version.ref = "gradle-android" }
 android-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "gradle-android" }
-publish = { id = "com.gradle.plugin-publish", version = "2.1.1" }
+publish = { id = "com.gradle.plugin-publish", version = "2.2.1" }
 sampleplugin = { id = "org.sample.plugin", version.ref = "sampleplugin" }
