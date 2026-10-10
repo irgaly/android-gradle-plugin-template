@@ -26,7 +26,6 @@ greeting {
 
 dependencies {
     implementation(dependencies.platform(libs.compose.bom))
-    implementation(libs.androidx.appcompat)
     implementation(libs.androidx.lifecycle)
     implementation(libs.bundles.compose)
 }

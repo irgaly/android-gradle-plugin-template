@@ -7,7 +7,6 @@ gradle-jvmToolchain = "21"
 [libraries]
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 android-gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle-android" }
-androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.7.0" }
 androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.11.0" }
 compose-bom = { module = "androidx.compose:compose-bom", version = "2026.06.01" }
 compose-activity = { module = "androidx.activity:activity-compose", version = "1.13.0" }
